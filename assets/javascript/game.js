@@ -17,7 +17,7 @@ function resetCrystals () {
         var crystal = $("<img>");
         crystal.addClass("crystal");
         crystal.attr("src", images[i]);
-        crystal.attr("value", (Math.floor(Math.random() *12 ) + 1));
+        crystal.attr("value", (Math.floor(Math.random() *19 ) + 1));
         crystal.attr("height", "100");
         $(".crystal.images").append(crystal);
     }
