@@ -24,10 +24,11 @@ function resetCrystals() {
 }
 
 function resetHTML() {
-    $(".target-number").html(targetNumber);
-    //console.log("")
+    $(".target-number").text(targetNumber);
+    //console.log("target-number");
     $(".win-lose-counter").html("<p>Wins: " + wins + "</p>" + "<p>Losses: " + losses + "</p>");
     $(".score-number").html(counter);
+    //console.log("score-number");
     $(".crystal-images").empty();
 }
 
@@ -41,9 +42,9 @@ function totalReset() {
 // asymmetrical code
 
 // page run up
-randomTargetNumber();
-resetHTML();
-resetCrystals();
+randomTargetNumber ();
+resetHTML ();
+resetCrystals ();
 
 // onClick functions
 
