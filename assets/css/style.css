@@ -1,3 +1,36 @@
 body {
-    background-image: src("assets/images/col")
+    background-image: url("../images/coalmine.jpg");
+
+}
+.target-number {
+    font-size: 24px;
+    border-style: solid;
+    border-color: gray;
+    border-width: 6px;
+    color: white;
+    text-align: center;
+}
+.win-lose-counter {
+    font-size: 24px;
+    border-style: solid;
+    border-color: red;
+    border-width: 6px;
+    color: white;
+    text-align: center;
+}
+.total-score {
+    font-size: 24px;
+    border-style: solid;
+    border-color: rgb(33, 216, 33);
+    border-width: 6px;
+    color: white;
+    text-align: center;
+}
+.score-number {
+    font-size: 24px;
+    border-style: solid;
+    border-color: rgb(11, 7, 218);
+    border-width: 6px;
+    color: white;
+    text-align: center;
 }
