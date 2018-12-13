@@ -12,19 +12,21 @@ function randomTargetNumber() {
     targetNumber = Math.floor(Math.random() * 125) + 19;
 }
 
-function resetCrystals() {
+// function resetCrystals() {
+
+function resetCrystals () {
     for (var i = 0; i < images.length; i++) {
         var crystal = $("<img>");
         crystal.addClass("crystal");
         crystal.attr("src", images[i]);
-        crystal.attr("value", (Math.floor(Math.random() * 19) + 1));
+        crystal.attr("value", (Math.floor(Math.random() * 12) + 1));
         crystal.attr("height", "100");
-        $(".crystal.images").append(crystal);
+        $(".crystal-images").append(crystal);
     }
 }
 
 function resetHTML() {
-    $(".target-number").text(targetNumber);
+    $(".target-number").html(targetNumber);
     //console.log("target-number");
     $(".win-lose-counter").html("<p>Wins: " + wins + "</p>" + "<p>Losses: " + losses + "</p>");
     $(".score-number").html(counter);
